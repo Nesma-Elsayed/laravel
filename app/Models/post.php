@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class post extends Model
 {
     use HasFactory;
+    // public $timestamps=false;
+    protected $guarded=[];
+    protected $perPage = 5;
+    
+    function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

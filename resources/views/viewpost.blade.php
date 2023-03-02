@@ -12,9 +12,9 @@
     <p>Title:- {{ $post->Title }}</p>
     <p>Description:- {{$post->Description }} </p>
    <h2>Post Creator Info</h2>
-   <p>Name:- {{ $post->Name }} </p>
-   <p>Email:- {{ $post->Email }}</p>
-   <p>Created at:- {{ $post->Created_At }}</p>
+   <p>Name:- {{ $post->user->name }} </p>
+   <p>Email:- {{ $post->user->email }}</p>
+   <p>Created at:- {{ $post->created_at }}</p>
 
 
 </body>
